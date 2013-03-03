@@ -1,0 +1,67 @@
+<div class="page-header"></small>
+  <h2>
+    <span data-blurb='Alex Lewis' class='live red'>{{ page.title }}</span>
+    <small data-blurb='Web Developer' class='live'>{{ page.tagline }}</small>
+  </h2>
+</div>
+<div class='row'>
+  <div class="span4" id='eventbooking'>
+  </div>
+  <div class="span4" id='half-off-depot'>
+  </div>
+  <div class="span4" id='pause-break'>
+  </div>
+</div>
+<hr />
+<div class='row'>
+  <div class='span4' id='favorite-tools'>
+  </div>
+  <div class='span4' id='interests'>
+  </div>
+  <div class='span4' id='contact-me'>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="span3">
+    <iframe width="210" src="http://www.youtube.com/embed/d7atgnCvUy4?hd=1" frameborder="0"></iframe>
+  </div>
+  <div class="span9">
+    <div id='messages' class='well'>
+    </div>
+  </div>
+</div>
+
+<script id='job-template' type="text/template">
+  <h4>
+    <span class='live red' data-blurb="<%= company %>">
+      <%= company %>
+    </span>
+    <small class='pull-right live' data-blurb="<%= title %>"><%= title %></small>
+  </h4>
+  <p>
+    <em class='live' data-blurb="<%= dateRange %>">
+      <%= dateRange %>
+    </em>
+  </p>
+  <%= _.template($("#item-template").html(), {items: items}) %>
+</script>
+
+<script id='other-template' type='text/template'>
+  <h4>
+    <span class='live red' data-blurb="<%= title %>">
+      <%= title %>
+    </span>
+  </h4>
+  <%= _.template($("#item-template").html(), {items: items}) %>
+</script>
+
+<script id='item-template' type='text/template'>
+  <div class='well'>
+    <ul class='inline'>
+      <% _.each(items, function(item) { %>
+        <li class="live blue" data-blurb="<%= item %>"><%= item %></li>
+      <% }); %>
+    </ul>
+  </div>
+</script>
