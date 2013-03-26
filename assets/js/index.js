@@ -38,7 +38,7 @@ $(function () {
 
   var contactMe = {
     title: "Contact Me",
-    items: [ "github", "email", "twitter", "phone", "linkedin" ]
+    items: [ "github", "email", "twitter", "phone", "linkedin", "skype" ]
   }
 
   var blurbs = {
@@ -183,6 +183,7 @@ $(function () {
     "email":"<a href='mailto:alex@pause-break.net'>alex@pause-break.net</a>",
     "phone": "865.806.3485",
     "linkedin": "<a href='http://www.linkedin.com/pub/alex-lewis/23/837/1a3/'>LinkedIn</a>",
+    "skype": "alex--lewis",
 
     // Miscellaneous:
     "Engineer":
