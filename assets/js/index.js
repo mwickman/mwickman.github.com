@@ -148,7 +148,8 @@ $(function () {
     "music":
       "I love both listening to and playing music. I've played the guitar for about 10\
       years, and also play a few flute instruments like the ocarina and irish tin whistle.\
-      I generally prefer anything funky or jazzy as far as listening goes."
+      I generally prefer anything funky or jazzy as far as listening goes.",
+
     "camping":
       "Proud Eagle Scout here! Growing up in the Smoky Mountains gave me\
       many opportunities to `rough it'. Backpacking is great fun. I also\
@@ -221,7 +222,7 @@ $(function () {
     }
   };
 
-  msgConsole.log( "Hello, I'm Alex. I'm a programmer, cyclist and musician from Knoxville, TN." );
+  msgConsole.log( "Hello, I'm Matt. I'm a project engineer from Knoxville, TN." );
   _.delay(msgConsole.log, 1500, "Click around! Or don't!");
   $('.live').click(function (ev) {
     msgConsole.logBlurb( $(ev.target).attr('data-blurb') );
