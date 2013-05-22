@@ -1,17 +1,17 @@
 $(function () {
 
-  var eventBooking = {
-    company: "EventBooking.com",
-    title: "Engineer",
-    dateRange: "May 2011 - October 2012",
+  var techUSA = {
+    company: "Tech USA",
+    title: "Professional Recruiter",
+    dateRange: "September 2011 - February 2012",
     items: [
-    ".NET", "Knockout.js", "jQuery", "Less", "MSSQL", "SVN" ]
+     ]
   }
 
-  var halfOffDepot = {
-    company: "Half Off Depot",
-    title: "Lead Programmer",
-    dateRange: "October 2012 - present",
+  var nCrowd = {
+    company: "nCrowd",
+    title: "Project Engineer",
+    dateRange: "July 2012 - May 2013",
     items: [ "Ruby", "Rails", "MySQL", "Haml", "Sass", "Less", "Coffeescript",
     "underscore.js", "git", "AWS" ],
   }
@@ -27,13 +27,13 @@ $(function () {
 
 
   var favoriteTools = {
-    title: "Favorite Tools :-)",
-    items: ["github", "vim", "linux", "javascript","chrome inspector" ]
+    title: "Favorite Tools",
+    items: ["github", "linux", "javascript", "chrome inspector", "new relic" ]
   };
 
   var interests = {
     title: "Interests",
-    items: ["bikes", "camping", "television", "games"]
+    items: ["music", "camping", "games"]
   }
 
   var contactMe = {
@@ -74,26 +74,12 @@ $(function () {
       "Heroku is a great way to get a your product online\
       without the hassle of server administration.",
 
-    ".NET": "At Eventbooking, we ran a WebForms 2.0 stack, and after a \
-      rewrite, a 4.0 MVC stack.",
-
-    "Knockout.js":
-      "An MVVM templating engine.\
-      At Eventbooking, we chose Knockout for the product rewrite.",
-
     "jQuery":
       "because document.getElementById gets old after a while ;-)",
 
     "Less":
       "Less is more! Less and Sass are both great, \
       though I wish they would combine the two projects.",
-
-    "MSSQL":
-      "EB's database layer. I mostly used it through an ORM.",
-
-    "SVN":
-      "We used SVN through Tortoise at Eventbooking.\
-      Simple to use, yet a robust VCS.",
 
     "Ruby":
       "Great scripting language. Great 'glue' language. \
@@ -115,17 +101,12 @@ $(function () {
       The syntax is pretty, too. :-)",
 
     "AWS":
-      "AWS is our fully-featured web host. Despite outages last year, it's\
-      been a great service.",
+      "AWS is our fully-featured web host. Despite occasional outages last year, it's\
+      been a great service that gives a lot of control over your server administration",
 
     "Jekyll":
       "This page was built with Jekyll! To view to source, visit\
-      <a href='http://github.com/natively/natively.github.com'>Github</a>.",
-
-    "vim":
-      "my favorite, most efficient editor. I wrote a simple\
-      introduction to using vim, available on\
-      <a href='http://github.com/natively/vim'>Github</a>",
+      <a href='http://github.com/mwickman/mwickman.github.com'>Github</a>.",
     
     "linux":
       "I'm an Ubuntu + gtk user. Most comfortable in front of a command line.\
@@ -134,70 +115,65 @@ $(function () {
     "javascript": "I like javascript because nothing puts you closer and more\
       in control of the user experience. Also, writing javascript is fun!",
 
-    "chrome inspector": "I switched from Firebug last year and\
-      haven't looked back",
+    "chrome inspector": "This is great for tracking down bugs or just learning how a cool\
+    web page works.",
 
     // Headers:
-    "Alex Lewis": "that's me!",
+    "Matthew Wickman": "that's me!",
 
     "EventBooking.com":
       "My first `real' programming job. Loved working here, and had a lot of\
       talented developers to learn from.",
 
-    "Half Off Depot":
-      "The country's third largest deal-site behind Groupon and Living Social.\
-      HOD is Pause Break's biggest client at the moment.",
+    "nCrowd":
+      "The country's third largest deal-site behind Groupon and Living Social,\
+      formerly known as Half Off Depot. nCrowd is Pause Break's biggest client at\
+      the moment.",
 
     "Pause Break LLC":
       "We recently celebrated our 1 year anniversary!\
       <a href='http://pause-break.net'>Pause Break</a>\
       offers cutting edge web experiences to its clients. ",
 
-    "Favorite Tools :-)":
+    "Favorite Tools":
       "Here are some of my favorite tools to work with.",
 
-    "Interests": "I'm not *just* a programmer. But mostly I am.",
+    "Interests":
+      "Technology has always been one of my greatest interestins, but I like other\
+      thigs too!",
 
     "Contact Me": "the easiest way to get in touch is by email.",
 
     // Interests:
-    "bikes":"I got into biking in college, when I realized how convenient it \
-      is for getting around in the city. Now I commute daily by bicyle.",
-
+    "music":
+      "I love both listening to and playing music. I've played the guitar for about 10\
+      years, and also play a few flute instruments like the ocarina and irish tin whistle.\
+      I generally prefer anything funky or jazzy as far as listening goes."
     "camping":
       "Proud Eagle Scout here! Growing up in the Smoky Mountains gave me\
-      many opportunities to `rough it' :-). Backpacking is great fun. I also\
-      spent five summers teaching outdoor skills at a camp.",
-
-    "beer": "yum!",
-
-    "television":
-      "Joss Whedon, The Wire, Breaking Bad, Portlandia, Archer...",
+      many opportunities to `rough it'. Backpacking is great fun. I also\
+      spent four summers teaching outdoor skills at a camp.",
 
     "games":
-      "I like old cRPGs like Baldur's Gate and Fallout.",
+      "I like RPGs and strategy games, like Starcraft II and Baldur's Gate.\
+      Recently I played FTL and loved it!",
 
     // Contact Me:
-    "github":"<a href='http://github.com/natively'>github.com/natively</a>",
-    "twitter":"<a href='http://twitter.com/nativelyhuman'>twitter.com/nativelyhuman</a>",
-    "email":"<a href='mailto:alex@pause-break.net'>alex@pause-break.net</a>",
-    "phone": "865.806.3485",
-    "linkedin": "<a href='http://www.linkedin.com/pub/alex-lewis/23/837/1a3/'>LinkedIn</a>",
-    "skype": "alex--lewis",
+    "github":"<a href='http://github.com/mwickman'>github.com/mwickman</a>",
+    "twitter":"<a href='http://twitter.com/matthew_wickman'>twitter.com/matthew_wickman</a>",
+    "email":"<a href='mailto:wickman.matthew@gmail.com'>wickman.matthew@gmail.com</a>",
+    "phone": "865.254.3645",
+    "linkedin": "<a href='www.linkedin.com/pub/matthew-wickman/1b/61b/b8/'>LinkedIn</a>",
+    "skype": "mwickman88",
 
     // Miscellaneous:
-    "Engineer":
-      "Maintained various customer websites, built features for the main app,\
-      fixed bugs",
+    "Professional Recruiter":
+      "During my time as a recruiter I had two account-breaking recruits with major clients.\
+      I quickly realized though that I wanted to be building software, not recruiting for it.",
 
-    "Web Developer":
-      "My profession of choice.",
-
-    "Lead Programmer":
-      "My first leadership position. With my Pause Break co-founder, have\
-      managed a foreign consulting team, established and enforced best practices,\
-      refactored and enhanced existing software and implemented a complete\
-      site redesign.",
+    "Project Engineer":
+      "My profession of choice. I love getting my hands dirty in all parts of the development\
+      cycle, and the ability to learn quickly is one of my greatest strengths.",
 
     "Co-Founder":
       "One of three. We have a couple first-party apps in the works, mostly at\
@@ -205,19 +181,19 @@ $(function () {
       contract jobs.",
 
     // Timeline:
-    "May 2011 - October 2012":
-      "My first job out of CS school. About 18 months at EB.",
+    "September 2011 - February 2012":
+      "My first job out of school. Being a recruiter turned out to not be a great fit.",
 
-    "October 2012 - present": 
-      "Moved back downtown, resumed biking everywhere.",
+    "July 2012 - May 2013": 
+      "Moved to downtown Knoxville and really enjoyed being able to walk or bike to work!",
 
     "February 2012 - present":
       "It's been a great experience building a company with my two friends."
   }
 
   var jobTemplate = $("#job-template").html();
-  $("#eventbooking").html(_.template(jobTemplate, eventBooking));
-  $("#half-off-depot").html(_.template(jobTemplate, halfOffDepot));
+  $("#nCrowd").html(_.template(jobTemplate, nCrowd));
+  $("#tech-usa").html(_.template(jobTemplate, techUSA));
   $("#pause-break").html(_.template(jobTemplate, pauseBreak));
 
   var otherTemplate = $("#other-template").html();
