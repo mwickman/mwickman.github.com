@@ -148,7 +148,7 @@ $(function () {
       "Here are some of my favorite tools to work with.",
 
     "Interests":
-      "Technology has always been one of my greatest interestins, but I like other\
+      "Technology has always been one of my greatest interests, but I like other\
       thigs too!",
 
     "Contact Me": "the easiest way to get in touch is by email.",
@@ -170,7 +170,7 @@ $(function () {
 
     // Contact Me:
     "github":"<a href='http://github.com/mwickman'>github.com/mwickman</a>",
-    "twitter":"<a href='http://twitter.com/matthew_wickman'>twitter.com/matthew_wickman</a>",
+    "twitter":"<a href='http://twitter.com/matthew_wickman'>twitter.com/wickman_matthew</a>",
     "email":"<a href='mailto:wickman.matthew@gmail.com'>wickman.matthew@gmail.com</a>",
     "phone": "865.254.3645",
     "linkedin": "<a href='www.linkedin.com/pub/matthew-wickman/1b/61b/b8/'>LinkedIn</a>",
@@ -198,7 +198,7 @@ $(function () {
       and made two account-breaking placements.",
 
     "interviewing":
-      "I interviewd potential recruits over the phone and in person for various tech positions.",
+      "I interviewed potential recruits over the phone and in person for various tech positions.",
 
     // Timeline:
     "September 2011 - February 2012":
