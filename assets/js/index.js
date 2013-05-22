@@ -2,9 +2,9 @@ $(function () {
 
   var techUSA = {
     company: "Tech USA",
-    title: "Professional Recruiter",
+    title: "Professional IT Recruiter",
     dateRange: "September 2011 - February 2012",
-    items: [
+    items: [ "negotiation", "interviewing", "recruit sourcing"
      ]
   }
 
@@ -12,7 +12,7 @@ $(function () {
     company: "nCrowd",
     title: "Project Engineer",
     dateRange: "July 2012 - May 2013",
-    items: [ "Ruby", "Rails", "MySQL", "Haml", "Sass", "Less", "Coffeescript",
+    items: [ "jira", "Ruby", "Rails", "MySQL", "Haml", "Sass", "Less",
     "underscore.js", "git", "AWS" ],
   }
 
@@ -20,15 +20,14 @@ $(function () {
     company: "Pause Break LLC",
     title: "Co-Founder",
     dateRange: "February 2012 - present",
-    items: [
-      "underscore.js", "backbone.js", "meteor.js", "handlebars.js", "Rails",
+    items: [ "underscore.js", "backbone.js", "meteor.js", "handlebars.js", "Rails",
       "git", "Heroku", "Jekyll" ]
   };
 
 
   var favoriteTools = {
     title: "Favorite Tools",
-    items: ["github", "linux", "javascript", "chrome inspector", "new relic" ]
+    items: ["github", "linux", "javascript", "sublime", "chrome inspector", "new relic" ]
   };
 
   var interests = {
@@ -43,97 +42,107 @@ $(function () {
 
   var blurbs = {
     // Tech:
+    "jira":
+      "Project Management software we used at nCrowd. With the Greenhopper extension it is easy\
+      to use either Agile or Kanban methodologies with your team.",
+
+    "sublime":
+      "My preferred text editor. Great for coding and doing application-wide searches.",
+
+    "new relic":
+      "This is a great service for monitoring Rails applications, and one we used extensively\
+      at nCrowd. Fantastic for finding places to improve app performance.",
+
     "underscore.js":
-      "my go-to javascript utility belt. As a ruby developer\
+      "A fantastic javascript utility belt used by many web developers. As a ruby developer\
       I love the familiar collections methods that underscore provides.",
 
     "backbone.js":
       "A model-view-collection pattern for building javascript applications.\
-      See a code sample of mine for a prototype application using underscore\
+      See a code sample that I have done some pair-programming on for a prototype application using backbone\
       on <a href='http://github.com/natively/buddy-balance-backbone'>\
       Github</a>",
 
     "meteor.js":
-      "a node.js derivative for building server-client js applications.\
-      See a code sample of mine for an application Pause Break is currently\
+      "a node.js derivative for building server-client js applications. One of my favorite JS frameworks to date.\
+      See a code sample for an application Pause Break is currently\
       building on\
       <a href='http://github.com/natively/meteorbalance'>Github.</a>",
 
     "handlebars.js":
-      "a client-side templating engine. I use it with meteor.js.",
+      "a client-side templating engine. Used with Pause Break's meteor.js application and this page too!",
 
     "Rails":
       "As web frameworks go,\
-      I'm strongest and have the longest / most experience with Rails.",
+      I'm strongest and have the longest / most experience with Rails. I've worked with 3.0+",
 
     "git":
-      "I love git! Branching makes managing multiple remote coders \
-      and their commits much easier.",
+      "I love git! Branching makes it easy to effectively manage distributed development teams \
+      and the deployment process",
 
     "Heroku":
-      "Heroku is a great way to get a your product online\
+      "Heroku is a great way to get a your product online quickly\
       without the hassle of server administration.",
 
     "jQuery":
       "because document.getElementById gets old after a while ;-)",
 
     "Less":
-      "Less is more! Less and Sass are both great, \
-      though I wish they would combine the two projects.",
+      "A dynamic stylesheet language and alternative to CSS and Sass. \
+      Variables, mixins, functions, whats not to like?",
 
     "Ruby":
-      "Great scripting language. Great 'glue' language. \
-      I use it for one-off operation-y scripts on a daily basis.",
+      "The language that got me to love programming again! \
+      I use it for one-off scripts on a daily basis, and programming in ruby is just plain fun :)",
 
     "MySQL":
-      "Half Off Depot's database layer. You can often find me writing reports\
+      "nCrowd's database layer. You can often find me writing reports\
       for the operations team using Workbench,\
         or in Ruby with the Sequel gem.",
 
     "Haml":
-      "A Ruby server side HTML templating language. Sister to Sass.",
+      "A Ruby server side HTML templating language. Sister to Sass, and I prefer it over ERB",
 
     "Sass":
-      "Another nestable, function-oriented CSS superset.",
-
-    "Coffeescript":
-      "allows me to avoid nasty habits like forgetting the var keyword.\
-      The syntax is pretty, too. :-)",
+      "Another way to write your CSS with variables, mixins, etc. Commonly used in Rails\
+      applications.",
 
     "AWS":
       "AWS is our fully-featured web host. Despite occasional outages last year, it's\
-      been a great service that gives a lot of control over your server administration",
+      been a great service that gives a lot of control over your server administration.",
 
     "Jekyll":
-      "This page was built with Jekyll! To view to source, visit\
+      "This page was built with Jekyll! To view its source, visit\
       <a href='http://github.com/mwickman/mwickman.github.com'>Github</a>.",
     
     "linux":
-      "I'm an Ubuntu + gtk user. Most comfortable in front of a command line.\
-      And more productive on Linux than Windows or OSX",
+      "I'm an Ubuntu + gtk user. I've always found it easiest to do development on a linux box,\
+      and I'm quite comfortable in front of a command line.",
 
-    "javascript": "I like javascript because nothing puts you closer and more\
-      in control of the user experience. Also, writing javascript is fun!",
+    "javascript":
+      "A must for any modern web developer. I like javascript because nothing puts you closer and more\
+      in control of the user experience.",
 
-    "chrome inspector": "This is great for tracking down bugs or just learning how a cool\
-    web page works.",
+    "chrome inspector":
+      "This is great for tracking down bugs or just learning how a cool\
+      web page works.",
 
     // Headers:
     "Matthew Wickman": "that's me!",
 
-    "EventBooking.com":
-      "My first `real' programming job. Loved working here, and had a lot of\
-      talented developers to learn from.",
+    "TechUSA":
+      "A company that focuses on engineering and IT recruitment.",
 
     "nCrowd":
       "The country's third largest deal-site behind Groupon and Living Social,\
-      formerly known as Half Off Depot. nCrowd is Pause Break's biggest client at\
-      the moment.",
+      formerly known as <a href='http://www.halfoffdepot.com'>Half Off Depot</a>.\
+      <a href='http://ww.ncrowd.com'>nCrowd</a> is Pause Break's biggest client at\
+      the moment, and I oversaw development of the flagship www.ncrowd.com site (launching soon).",
 
     "Pause Break LLC":
       "We recently celebrated our 1 year anniversary!\
       <a href='http://pause-break.net'>Pause Break</a>\
-      offers cutting edge web experiences to its clients. ",
+      offers cutting edge web experiences to its clients.",
 
     "Favorite Tools":
       "Here are some of my favorite tools to work with.",
@@ -181,6 +190,16 @@ $(function () {
       alpha-prototype stage. That said, most of our time is occupied working\
       contract jobs.",
 
+    "negotiation":
+      "I negotiated salaries with potential recruits and employers",
+
+    "recruit sourcing":
+      "I used both organic networking and web-based tools to find potential candidates for clients,\
+      and made two account-breaking placements.",
+
+    "interviewing":
+      "I interviewd potential recruits over the phone and in person for various tech positions.",
+
     // Timeline:
     "September 2011 - February 2012":
       "My first job out of school. Being a recruiter turned out to not be a great fit.",
@@ -223,7 +242,7 @@ $(function () {
   };
 
   msgConsole.log( "Hello, I'm Matt. I'm a project engineer from Knoxville, TN." );
-  _.delay(msgConsole.log, 1500, "Click around! Or don't!");
+  _.delay(msgConsole.log, 1500, "Click on things to get more info in this console!");
   $('.live').click(function (ev) {
     msgConsole.logBlurb( $(ev.target).attr('data-blurb') );
   });
