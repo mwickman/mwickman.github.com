@@ -70,7 +70,7 @@ $(function () {
       <a href='http://github.com/natively/meteorbalance'>Github.</a>",
 
     "handlebars.js":
-      "a client-side templating engine. Used with Pause Break's meteor.js application and this page too!",
+      "a client-side templating engine. Used with Pause Break's meteor.js application",
 
     "Rails":
       "As web frameworks go,\
