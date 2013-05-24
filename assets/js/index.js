@@ -61,7 +61,7 @@ $(function () {
       "A model-view-collection pattern for building javascript applications.\
       See a code sample that I have done some pair-programming on for a prototype application using backbone\
       on <a href='http://github.com/natively/buddy-balance-backbone'>\
-      Github</a>",
+      Github.</a>",
 
     "meteor.js":
       "a node.js derivative for building server-client js applications. One of my favorite JS frameworks to date.\
@@ -70,7 +70,7 @@ $(function () {
       <a href='http://github.com/natively/meteorbalance'>Github.</a>",
 
     "handlebars.js":
-      "a client-side templating engine. Used with Pause Break's meteor.js application",
+      "a client-side templating engine. Used with Pause Break's meteor.js application.",
 
     "Rails":
       "As web frameworks go,\
@@ -78,7 +78,7 @@ $(function () {
 
     "git":
       "I love git! Branching makes it easy to effectively manage distributed development teams \
-      and the deployment process",
+      and the deployment process.",
 
     "Heroku":
       "Heroku is a great way to get a your product online quickly\
@@ -101,7 +101,7 @@ $(function () {
         or in Ruby with the Sequel gem.",
 
     "Haml":
-      "A Ruby server side HTML templating language. Sister to Sass, and I prefer it over ERB",
+      "A Ruby server side HTML templating language. Sister to Sass, and I prefer it over ERB.",
 
     "Sass":
       "Another way to write your CSS with variables, mixins, etc. Commonly used in Rails\
@@ -191,7 +191,7 @@ $(function () {
       contract jobs.",
 
     "negotiation":
-      "I negotiated salaries with potential recruits and employers",
+      "I negotiated salaries with potential recruits and employers.",
 
     "recruit sourcing":
       "I used both organic networking and web-based tools to find potential candidates for clients,\
