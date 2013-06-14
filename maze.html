@@ -1,0 +1,92 @@
+---
+layout: default
+title: Matthew Wickman
+tagline: Project Engineer
+
+---
+
+<!DOCTYPE html>
+<html>
+<script src="/assets/js/maze.js"></script>
+
+<body>
+  <div style="width: 100%; text-align: center;">
+    <div class="input-prepend">
+      <span class="add-on">Height</span>
+      <input type="number" id="height" placeholder="height"/>
+    </div>
+    <div class="input-prepend">
+      <span class="add-on">Width</span>
+      <input type="number" id="width" placeholder="width"/>
+    </div>
+    <div class="input-prepend">
+      <span class="add-on">Cell Size</span>
+      <input type="number" id="cell size" placeholder="cell size"/>
+    </div>
+  </div>
+  <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+    <button onclick="draw()">Refresh!</button>
+  </div>
+  
+  <div style="width: 100%; text-align: center;">
+    <canvas id="maze">Your browser does not support the HTML5 canvas tag.</canvas>
+  </div>
+  <div style="width: 100%; text-align: center;">
+    <a href="http://github.com/mwickman/maze">Visit the repository here!</a>
+  </div>
+</body>
+<script>
+var height = 20;
+var size = 20;
+var width = 20;
+
+//Draw out the maze in canvas
+//clearGrid();
+draw();
+function draw () {
+  width = Number(document.getElementById('width').value) || 20;
+  height = Number(document.getElementById('height').value) || 20;
+  size = Number(document.getElementById('cell size').value) || 20;
+  clearGrid();
+  carve(0,0,grid);
+  var c=document.getElementById('maze');
+  var ctx=c.getContext('2d');
+
+  c.width= width*size+25;
+  c.height = height*size+5;
+
+  //should probably find a way to factor out some of the below
+  for (var row=0; row<height; row++) {
+    for (var col=0; col<width; col++) {
+
+      if ((grid[row][col] & cardinal['n']) == 0) {
+        ctx.moveTo(0.5+size*col, 0.5+size*row);
+        ctx.lineTo(0.5+size*col+size, 0.5+size*row);
+      }
+      if ((grid[row][col] & cardinal['s']) == 0) {
+        ctx.moveTo(0.5+size*col + size, 0.5+size*row + size);
+        ctx.lineTo(0.5+size*col, 0.5+size*row + size);
+      }
+      if ((grid[row][col] & cardinal['e']) == 0) {
+          ctx.moveTo(0.5+size*col+size, 0.5+size*row + size);
+          ctx.lineTo(0.5+size*col + size, 0.5+size*row);
+      }
+      if ((grid[row][col] & cardinal['w']) == 0) {
+          ctx.moveTo(0.5+size*col, 0.5+size*row);
+          ctx.lineTo(0.5+size*col, 0.5+size*row+size);
+      } 
+
+     }
+  }
+  ctx.strokeStyle = "#000";
+  ctx.stroke();
+  //show grid in console
+  console.log("::Final Grid::");
+  for (var i=0; i< grid.length; i++) {
+  console.log(grid[i]);
+  }
+}
+//buttons and forms on page
+
+</script>
+</html>
