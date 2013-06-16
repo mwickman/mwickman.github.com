@@ -6,6 +6,10 @@
   West  = 8
 */
 // initializing the grid bitfield
+var height = 20;
+var size = 20;
+var width = 20;
+
 var grid = new Array();
 
 function clearGrid() {
