@@ -16,7 +16,7 @@ function clearGrid() {
   	}
   }
 }
-
+clearGrid();
 // array randomizer
 function fisherYates ( myArray ) {
   var i = myArray.length, j, tempi, tempj;
